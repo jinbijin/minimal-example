@@ -1,0 +1,6 @@
+<ng-container [ngSwitch]="maybeText.type">
+  <span *ngSwitchCase="MaybeType.Nothing">Nothing</span>
+  <span *ngSwitchCase="MaybeType.Just">{{ maybeText.value }}</span>
+</ng-container>
+
+<router-outlet></router-outlet>
